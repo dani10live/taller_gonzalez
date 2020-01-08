@@ -4,20 +4,31 @@ head
   title Titulo
   link(rel='stylesheet' href='css/estilos.css')
 header
-  img(src='multimedia/logo1.jpg' alt='')
-  h1 Taller Gonzalez
-  nav
-    ul
-      li
-        a(href='') Inicio
-      li
-        a(href='') Servicios
-      li
-        a(href='') Contactanos
-      li
-        a(href='') Sobre Nosotros
-      li
-        a(href='') Nuestro Trabajo
+  .login
+    nav
+      ul
+        li
+          a(href='') Iniciar Sesión
+        li
+          a(href='') Registrarse
+        li
+          a(href='') Mi Perfil
+  .logotipo
+    img(src='multimedia/logo1.jpg' alt='')
+    h1 Taller Gonzalez
+    p Pagina Actual
+nav
+  ul
+    li
+      a(href='') Inicio
+    li
+      a(href='') Servicios
+    li
+      a(href='') Contactanos
+    li
+      a(href='') Sobre Nosotros
+    li
+      a(href='') Nuestro Trabajo
 main
   block contenido
 footer

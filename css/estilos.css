@@ -40,3 +40,10 @@ q:before, q:after {
 table {
   border-collapse: collapse;
   border-spacing: 0; }
+
+body {
+  width: 80%;
+  margin: 0 auto; }
+
+.login li {
+  display: inline-block; }
