@@ -1,4 +1,14 @@
 @import "componentes/reset.scss";
 @import "componentes/variables.scss";
+body{
+    width: 80%;
+    margin:0 auto;
 
+}
+.login{
 
+    
+    li{
+        display: inline-block;
+    }
+}
