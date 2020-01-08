@@ -8,7 +8,10 @@ body{
 .login{
 
     
-    li{
-        display: inline-block;
+    nav{
+        text-align:  right;
+        a {
+            margin-right: 0.5em;
+        }
     }
 }

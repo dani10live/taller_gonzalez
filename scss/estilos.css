@@ -1,3 +1,4 @@
+/* line 1, /home/estudiante/taller_gonzalez/scss/componentes/_reset.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -19,33 +20,44 @@ time, mark, audio, video {
   vertical-align: baseline; }
 
 /* HTML5 display-role reset for older browsers */
+/* line 22, /home/estudiante/taller_gonzalez/scss/componentes/_reset.scss */
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
   display: block; }
 
+/* line 26, /home/estudiante/taller_gonzalez/scss/componentes/_reset.scss */
 body {
   line-height: 1; }
 
+/* line 29, /home/estudiante/taller_gonzalez/scss/componentes/_reset.scss */
 ol, ul {
   list-style: none; }
 
+/* line 32, /home/estudiante/taller_gonzalez/scss/componentes/_reset.scss */
 blockquote, q {
   quotes: none; }
 
+/* line 35, /home/estudiante/taller_gonzalez/scss/componentes/_reset.scss */
 blockquote:before, blockquote:after,
 q:before, q:after {
   content: '';
   content: none; }
 
+/* line 40, /home/estudiante/taller_gonzalez/scss/componentes/_reset.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0; }
 
+/* line 3, /home/estudiante/taller_gonzalez/scss/estilos.scss */
 body {
   width: 80%;
   margin: 0 auto; }
 
+/* line 11, /home/estudiante/taller_gonzalez/scss/estilos.scss */
 .login nav {
   text-align: right; }
+  /* line 13, /home/estudiante/taller_gonzalez/scss/estilos.scss */
   .login nav a {
     margin-right: 0.5em; }
+
+/*# sourceMappingURL=estilos.css.map */
