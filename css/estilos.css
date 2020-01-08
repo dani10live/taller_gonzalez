@@ -42,22 +42,25 @@ table {
   border-spacing: 0; }
 
 body {
-  width: 80%;
   margin: 0 auto; }
 
 header {
   background-color: #1177d1;
   color: white; }
+  header p {
+    text-align: center; }
 
 .login nav {
   text-align: right; }
   .login nav a {
     margin-right: 0.5em;
     color: white; }
+  .login nav li {
+    display: inline-block; }
 
 .logotipo {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   margin-left: 1em;
   margin-right: 1em; }
@@ -69,9 +72,14 @@ header {
   border-top: 2px solid black; }
   .navegacion_principal nav {
     display: flex;
-    justify-content: space-around; }
+    justify-content: space-around;
+    padding: 2em; }
+    .navegacion_principal nav li {
+      display: inline-block; }
     .navegacion_principal nav a {
-      padding-top: 1em;
-      padding-bottom: 1em;
+      padding: 1em;
+      display: block;
       color: white;
       text-decoration: none; }
+      .navegacion_principal nav a:hover {
+        background-color: #ffff52; }

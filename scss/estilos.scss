@@ -1,13 +1,15 @@
 @import "componentes/reset.scss";
 @import "componentes/variables.scss";
 body{
-    width: 80%;
     margin:0 auto;
 
 }
 header {
     background-color: $color-titulo;
     color: white;
+    p{
+        text-align: center;
+    }
 }
 .login{
 
@@ -17,33 +19,41 @@ header {
             margin-right: 0.5em;
             color: white;
         }
+        li{
+            display: inline-block;
+        }
     }
-}
+}   
 .logotipo {
         display: flex;    
-        justify-content: space-between;
+        justify-content: space-around;
         align-items: center;
         margin-left: 1em;
         margin-right: 1em;
-        
-    img{
-        width: 155px;
-    }
+        img{
+            width: 155px;
+        }
     
 }
 .navegacion_principal {
     background-color: $color-secundario;
     border-top: 2px solid black;
-    
     nav{ 
         display: flex;
         justify-content: space-around;
+        padding: 2em;
+        li{
+            display: inline-block;
+            
+        }
         a {
-            padding-top: 1em;
-            padding-bottom: 1em;
+            padding: 1em;
+            display: block;
             color: white;
             text-decoration: none;
-            
+            &:hover{
+                background-color:lighten($color: yellow, $amount: 16%);
+            }
         }
     }
 }
