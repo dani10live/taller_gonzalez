@@ -45,7 +45,33 @@ body {
   width: 80%;
   margin: 0 auto; }
 
+header {
+  background-color: #1177d1;
+  color: white; }
+
 .login nav {
   text-align: right; }
   .login nav a {
-    margin-right: 0.5em; }
+    margin-right: 0.5em;
+    color: white; }
+
+.logotipo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 1em;
+  margin-right: 1em; }
+  .logotipo img {
+    width: 155px; }
+
+.navegacion_principal {
+  background-color: #009ddc;
+  border-top: 2px solid black; }
+  .navegacion_principal nav {
+    display: flex;
+    justify-content: space-around; }
+    .navegacion_principal nav a {
+      padding-top: 1em;
+      padding-bottom: 1em;
+      color: white;
+      text-decoration: none; }

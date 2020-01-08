@@ -5,13 +5,45 @@ body{
     margin:0 auto;
 
 }
+header {
+    background-color: $color-titulo;
+    color: white;
+}
 .login{
 
-    
     nav{
         text-align:  right;
         a {
             margin-right: 0.5em;
+            color: white;
+        }
+    }
+}
+.logotipo {
+        display: flex;    
+        justify-content: space-between;
+        align-items: center;
+        margin-left: 1em;
+        margin-right: 1em;
+        
+    img{
+        width: 155px;
+    }
+    
+}
+.navegacion_principal {
+    background-color: $color-secundario;
+    border-top: 2px solid black;
+    
+    nav{ 
+        display: flex;
+        justify-content: space-around;
+        a {
+            padding-top: 1em;
+            padding-bottom: 1em;
+            color: white;
+            text-decoration: none;
+            
         }
     }
 }

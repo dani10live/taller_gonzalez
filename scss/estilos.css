@@ -53,11 +53,43 @@ body {
   width: 80%;
   margin: 0 auto; }
 
-/* line 11, /home/estudiante/taller_gonzalez/scss/estilos.scss */
+/* line 8, /home/estudiante/taller_gonzalez/scss/estilos.scss */
+header {
+  background-color: #1177d1;
+  color: white; }
+
+/* line 14, /home/estudiante/taller_gonzalez/scss/estilos.scss */
 .login nav {
   text-align: right; }
-  /* line 13, /home/estudiante/taller_gonzalez/scss/estilos.scss */
+  /* line 16, /home/estudiante/taller_gonzalez/scss/estilos.scss */
   .login nav a {
-    margin-right: 0.5em; }
+    margin-right: 0.5em;
+    color: white; }
+
+/* line 22, /home/estudiante/taller_gonzalez/scss/estilos.scss */
+.logotipo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 1em;
+  margin-right: 1em; }
+  /* line 29, /home/estudiante/taller_gonzalez/scss/estilos.scss */
+  .logotipo img {
+    width: 155px; }
+
+/* line 34, /home/estudiante/taller_gonzalez/scss/estilos.scss */
+.navegacion_principal {
+  background-color: #009ddc;
+  border-top: 2px solid black; }
+  /* line 38, /home/estudiante/taller_gonzalez/scss/estilos.scss */
+  .navegacion_principal nav {
+    display: flex;
+    justify-content: space-around; }
+    /* line 41, /home/estudiante/taller_gonzalez/scss/estilos.scss */
+    .navegacion_principal nav a {
+      padding-top: 1em;
+      padding-bottom: 1em;
+      color: white;
+      text-decoration: none; }
 
 /*# sourceMappingURL=estilos.css.map */
