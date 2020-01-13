@@ -1,12 +1,13 @@
 @import "componentes/reset.scss";
 @import "componentes/variables.scss";
+@import "componentes/style.scss";
 @font-face {
     font-family: "Roboto";
     src: url("../fuentes/Roboto-Regular.ttf");
 }
 $color: #4c5563;
 $color_claro: #677387;
-p{
+p,a,h1,h2,h3{
         font-family: "Roboto";
     }
 .posicion{
@@ -25,14 +26,15 @@ p{
     transition: 1s;
     background-image: url("../multimedia/portada.jpg");
     display: flex;
-        p {
+        a {
             background-color: black;
             padding: 0.8em;
             color: white;
             margin: 0.5em;
             font-size: 3em;
+            text-decoration: none;
         }
-        p:hover{
+        a:hover{
             background-color: $color;
         }
 }
@@ -47,14 +49,15 @@ p{
     display: flex;
     flex-direction: row-reverse;
     transition: 1s;
-        p {
+        a {
             background-color: black;
             padding: 0.8em;
             margin: 0.5em;
             color: white;
             font-size: 3em;
+            text-decoration: none;
         }
-        p:hover{
+        a:hover{
             background-color: $color;
         }
 }
@@ -108,6 +111,8 @@ body{
 header {
     background-color: $color-titulo;
     color: white;
+    display: flex;
+    justify-content: space-around;
     p{
         text-align: center;
     }
@@ -142,7 +147,7 @@ header {
     nav{ 
         display: flex;
         justify-content: space-around;
-        padding: 2em;
+     
         li{
             display: inline-block;
             
@@ -153,7 +158,7 @@ header {
             color: white;
             text-decoration: none;
             &:hover{
-                background-color:lighten($color: yellow, $amount: 16%);
+                  text-decoration: underline;
             }
         }
     }
@@ -180,3 +185,29 @@ footer{
         color: white;
     }
 }
+
+//cosas de productos
+.producto{
+    background-color: #02569F;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    transition: 1s;
+    p{
+        color: white;
+        width: 50%;
+        font-size: 1.2em;
+        align-self: center;
+    }
+    &:hover{
+        background-color: 	#0697B2;
+        img{
+            //opacity: 0.5;
+            
+        }
+    }
+}
+//cosas de contactanos
+
+
+//cosas de sobrenosotros

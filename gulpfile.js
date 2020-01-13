@@ -5,6 +5,7 @@ var pug = require('gulp-pug2');
 // var jade = require('gulp-jade');
 var browserSync = require('browser-sync').create();
 var autoprefixer = require('gulp-autoprefixer');
+var minifyCSS = require('gulp-ninify-css');
 sass.compiler = require('node-sass');
 
 // Crear tarea
@@ -12,6 +13,10 @@ sass.compiler = require('node-sass');
 gulp.task('sass', function () {
   return gulp.src('./scss/**/*.scss')
     .pipe(sass().on('error', sass.logError))
+    .pipe(autoprefixer({
+      cascade:false
+    })
+    .pipe(minifyCSS())
     .pipe(gulp.dest('./css/'))
     .pipe(browserSync.stream());
 });

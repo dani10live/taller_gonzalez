@@ -1,0 +1,101 @@
+@font-face {
+    font-family: "Roboto";
+    src: url("../fuentes/Roboto-Regular.ttf");
+}
+$color: #4c5563;
+$color_claro: #677387;
+p{
+        font-family: "Roboto";
+    }
+.posicion{
+    display: flex;
+    background-color: darkgoldenrod;
+    p{
+        display: block;
+        margin:0 auto;
+        padding: 1em;
+    }
+}
+.panel1{
+    margin: 0 auto;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: 1s;
+    background-image: url("../multimedia/portada.jpg");
+    display: flex;
+        p {
+            background-color: black;
+            padding: 0.8em;
+            color: white;
+            margin: 0.5em;
+            font-size: 3em;
+        }
+        p:hover{
+            background-color: $color;
+        }
+}
+.panel1:hover{
+    
+    opacity: 0.5;
+}
+.panel2{
+    margin: 0 auto;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url("../multimedia/moto.jpg");
+    display: flex;
+    flex-direction: row-reverse;
+    transition: 1s;
+        p {
+            background-color: black;
+            padding: 0.8em;
+            margin: 0.5em;
+            color: white;
+            font-size: 3em;
+        }
+        p:hover{
+            background-color: $color;
+        }
+}
+.panel2:hover{
+    background-image: url("../multimedia/moto_transparente.jpg");
+}
+iframe{
+    width: 100%;
+    margin: 0 auto;
+}
+.tablon{
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+   
+    .novedades{
+        
+        display: flex;
+        justify-content: space-between;
+       flex-wrap: wrap;
+        .noticia{
+            margin: 0.5em auto;
+            background-color: $color;
+            color: white;
+            text-align: center;
+            padding: 0.5em;
+            transition: 0.5s;
+        }
+        .noticia:hover{
+            background-color: $color_claro;
+        }
+    }
+}
+.destacado{
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+.atencion{
+     background-color: black;
+            padding: 0.8em;
+            margin: 0.5em;
+            color: white;
+            font-size: 3em;
+}
