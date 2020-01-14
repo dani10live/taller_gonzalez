@@ -1,12 +1,5 @@
-@font-face {
-    font-family: "Roboto";
-    src: url("../fuentes/Roboto-Regular.ttf");
-}
-$color: #4c5563;
-$color_claro: #677387;
-p{
-        font-family: "Roboto";
-    }
+@import "estilos";
+
 .posicion{
     display: flex;
     background-color: darkgoldenrod;
@@ -23,20 +16,20 @@ p{
     transition: 1s;
     background-image: url("../multimedia/portada.jpg");
     display: flex;
-        p {
+        a {
             background-color: black;
             padding: 0.8em;
             color: white;
             margin: 0.5em;
             font-size: 3em;
+            text-decoration: none;
         }
-        p:hover{
+        a:hover{
             background-color: $color;
         }
 }
 .panel1:hover{
-    
-    opacity: 0.5;
+    background-image: url("../multimedia/portada_transparente.jpg");
 }
 .panel2{
     margin: 0 auto;
@@ -46,14 +39,15 @@ p{
     display: flex;
     flex-direction: row-reverse;
     transition: 1s;
-        p {
+        a {
             background-color: black;
             padding: 0.8em;
             margin: 0.5em;
             color: white;
             font-size: 3em;
+            text-decoration: none;
         }
-        p:hover{
+        a:hover{
             background-color: $color;
         }
 }

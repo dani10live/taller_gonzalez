@@ -109,3 +109,17 @@ header {
     display: inline-block; }
   .redes a {
     color: white; }
+
+.producto {
+  background-color: #02569F;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  transition: 1s; }
+  .producto p {
+    color: white;
+    width: 50%;
+    font-size: 1.2em;
+    align-self: center; }
+  .producto:hover {
+    background-color: #0697B2; }
