@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* line 1, /home/estudiante/taller_gonzalez/scss/componentes/_reset.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -135,22 +136,22 @@ header {
   .redes a {
     color: white; }
 
-/* line 3, /home/estudiante/taller_gonzalez/scss/nosotros.scss */
-.presentacion {
-  width: 60%;
-  margin: auto;
-  text-align: center;
-  margin-bottom: 5em; }
-  /* line 8, /home/estudiante/taller_gonzalez/scss/nosotros.scss */
-  .presentacion img {
-    width: 500px; }
-  /* line 12, /home/estudiante/taller_gonzalez/scss/nosotros.scss */
-  .presentacion .title {
-    color: #326ba8;
-    font-size: 2em;
-    font-weight: bolder; }
-  /* line 17, /home/estudiante/taller_gonzalez/scss/nosotros.scss */
-  .presentacion p {
-    margin-bottom: 0.7em; }
+/* line 3, /home/estudiante/taller_gonzalez/scss/servicios.scss */
+.producto {
+  background-color: #02569F;
+  /*Se utilizarán variables para estas cosas*/
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  transition: 1s; }
+  /* line 9, /home/estudiante/taller_gonzalez/scss/servicios.scss */
+  .producto p {
+    color: white;
+    width: 50%;
+    font-size: 1.2em;
+    align-self: center; }
+  /* line 15, /home/estudiante/taller_gonzalez/scss/servicios.scss */
+  .producto:hover {
+    background-color: #326ba8; }
 
-/*# sourceMappingURL=nosotros.css.map */
+/*# sourceMappingURL=servicios.css.map */

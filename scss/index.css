@@ -48,6 +48,8 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
+/*color utilizado por index*/
+/*color utilizado por index*/
 @font-face {
   font-family: "Roboto";
   src: url("../fuentes/Roboto-Regular.ttf"); }
@@ -135,22 +137,104 @@ header {
   .redes a {
     color: white; }
 
-/* line 3, /home/estudiante/taller_gonzalez/scss/nosotros.scss */
-.presentacion {
-  width: 60%;
-  margin: auto;
-  text-align: center;
-  margin-bottom: 5em; }
-  /* line 8, /home/estudiante/taller_gonzalez/scss/nosotros.scss */
-  .presentacion img {
-    width: 500px; }
-  /* line 12, /home/estudiante/taller_gonzalez/scss/nosotros.scss */
-  .presentacion .title {
-    color: #326ba8;
-    font-size: 2em;
-    font-weight: bolder; }
-  /* line 17, /home/estudiante/taller_gonzalez/scss/nosotros.scss */
-  .presentacion p {
-    margin-bottom: 0.7em; }
+/* line 3, /home/estudiante/taller_gonzalez/scss/index.scss */
+.posicion {
+  display: flex;
+  background-color: darkgoldenrod; }
+  /* line 6, /home/estudiante/taller_gonzalez/scss/index.scss */
+  .posicion p {
+    display: block;
+    margin: 0 auto;
+    padding: 1em; }
 
-/*# sourceMappingURL=nosotros.css.map */
+/* line 12, /home/estudiante/taller_gonzalez/scss/index.scss */
+.panel1 {
+  margin: 0 auto;
+  background-size: cover;
+  background-repeat: no-repeat;
+  transition: 1s;
+  background-image: url("../multimedia/portada.jpg");
+  display: flex; }
+  /* line 19, /home/estudiante/taller_gonzalez/scss/index.scss */
+  .panel1 a {
+    background-color: black;
+    padding: 0.8em;
+    color: white;
+    margin: 0.5em;
+    font-size: 3em;
+    text-decoration: none; }
+  /* line 27, /home/estudiante/taller_gonzalez/scss/index.scss */
+  .panel1 a:hover {
+    background-color: #4c5563; }
+
+/* line 31, /home/estudiante/taller_gonzalez/scss/index.scss */
+.panel1:hover {
+  background-image: url("../multimedia/portada_transparente.jpg"); }
+
+/* line 34, /home/estudiante/taller_gonzalez/scss/index.scss */
+.panel2 {
+  margin: 0 auto;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url("../multimedia/moto.jpg");
+  display: flex;
+  flex-direction: row-reverse;
+  transition: 1s; }
+  /* line 42, /home/estudiante/taller_gonzalez/scss/index.scss */
+  .panel2 a {
+    background-color: black;
+    padding: 0.8em;
+    margin: 0.5em;
+    color: white;
+    font-size: 3em;
+    text-decoration: none; }
+  /* line 50, /home/estudiante/taller_gonzalez/scss/index.scss */
+  .panel2 a:hover {
+    background-color: #4c5563; }
+
+/* line 54, /home/estudiante/taller_gonzalez/scss/index.scss */
+.panel2:hover {
+  background-image: url("../multimedia/moto_transparente.jpg"); }
+
+/* line 57, /home/estudiante/taller_gonzalez/scss/index.scss */
+iframe {
+  width: 100%;
+  margin: 0 auto; }
+
+/* line 61, /home/estudiante/taller_gonzalez/scss/index.scss */
+.tablon {
+  width: 100%;
+  margin: 0 auto;
+  display: flex; }
+  /* line 66, /home/estudiante/taller_gonzalez/scss/index.scss */
+  .tablon .novedades {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; }
+    /* line 71, /home/estudiante/taller_gonzalez/scss/index.scss */
+    .tablon .novedades .noticia {
+      margin: 0.5em auto;
+      background-color: #4c5563;
+      color: white;
+      text-align: center;
+      padding: 0.5em;
+      transition: 0.5s; }
+    /* line 79, /home/estudiante/taller_gonzalez/scss/index.scss */
+    .tablon .novedades .noticia:hover {
+      background-color: #677387; }
+
+/* line 84, /home/estudiante/taller_gonzalez/scss/index.scss */
+.destacado {
+  background-color: black;
+  color: white;
+  text-align: center; }
+
+/* line 89, /home/estudiante/taller_gonzalez/scss/index.scss */
+.atencion {
+  background-color: black;
+  padding: 0.8em;
+  margin: 0.5em;
+  color: white;
+  font-size: 3em; }
+
+/*# sourceMappingURL=index.css.map */

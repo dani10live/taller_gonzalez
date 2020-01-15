@@ -41,6 +41,11 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
+/* colores del titulo de la pagina*/
+/* color del nav*/
+/* color para los productos en servicios*/
+/*color utilizado por index*/
+/*color utilizado por index*/
 @font-face {
   font-family: "Roboto";
   src: url("../fuentes/Roboto-Regular.ttf"); }
@@ -115,9 +120,11 @@ header {
   margin: auto;
   text-align: center;
   margin-bottom: 5em; }
+  .presentacion img {
+    width: 500px; }
   .presentacion .title {
     color: #326ba8;
     font-size: 2em;
-    font-weight: bold; }
+    font-weight: bolder; }
   .presentacion p {
     margin-bottom: 0.7em; }

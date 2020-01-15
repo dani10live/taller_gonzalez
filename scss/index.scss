@@ -25,7 +25,7 @@
             text-decoration: none;
         }
         a:hover{
-            background-color: $color;
+            background-color: $color-panel;
         }
 }
 .panel1:hover{
@@ -48,7 +48,7 @@
             text-decoration: none;
         }
         a:hover{
-            background-color: $color;
+            background-color: $color-panel;
         }
 }
 .panel2:hover{
@@ -70,14 +70,14 @@ iframe{
        flex-wrap: wrap;
         .noticia{
             margin: 0.5em auto;
-            background-color: $color;
+            background-color: $color-panel;
             color: white;
             text-align: center;
             padding: 0.5em;
             transition: 0.5s;
         }
         .noticia:hover{
-            background-color: $color_claro;
+            background-color: $color-noticias;
         }
     }
 }

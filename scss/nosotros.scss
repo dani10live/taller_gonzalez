@@ -5,10 +5,14 @@
     margin: auto;
     text-align: center;
     margin-bottom: 5em;
+    img{
+        width: 500px;
+        
+    }
     .title {
-        color: #326ba8;
+        color: $color-titulo:;
         font-size: 2em;
-        font-weight: bold;
+        font-weight: bolder;
     }
     p {
         margin-bottom:0.7em;

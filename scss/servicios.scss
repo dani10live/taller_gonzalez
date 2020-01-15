@@ -1,7 +1,7 @@
 @import "estilos";
 
 .producto{
-    background-color: #02569F;
+    background-color: $color-producto; /*Se utilizarán variables para estas cosas*/
     width: 100%;
     display: flex;
     justify-content: center;
@@ -13,7 +13,7 @@
         align-self: center;
     }
     &:hover{
-        background-color: 	#0697B2;
+        background-color: $color-titulo;
         img{
             //opacity: 0.5;
             
