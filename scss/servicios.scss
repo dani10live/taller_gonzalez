@@ -1,22 +1,36 @@
 @import "estilos";
 
-.producto{
-    background-color: $color-producto; /*Se utilizarán variables para estas cosas*/
-    width: 100%;
+.productos {
+    background-color: $color-producto;
     display: flex;
-    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+
+}
+.productos:first-child {
+    padding-top: 2em;
+}
+.productos:last-child {
+    padding-bottom: 2em;
+}
+
+.producto {
+    display: flex;
+    flex: 1;
     transition: 1s;
-    p{
+
+    p {
         color: white;
         width: 50%;
         font-size: 1.2em;
         align-self: center;
     }
-    &:hover{
+
+    &:hover {
         background-color: $color-titulo;
-        img{
+
+        img {
             //opacity: 0.5;
-            
         }
     }
 }

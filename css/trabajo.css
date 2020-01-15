@@ -1,0 +1,133 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* colores del titulo de la pagina*/
+/* color del nav*/
+/* color para los productos en servicios*/
+/*color utilizado por index*/
+/*color utilizado por index*/
+@font-face {
+  font-family: "Roboto";
+  src: url("../fuentes/Roboto-Regular.ttf"); }
+
+p, a, h1, h2, h3 {
+  font-family: "Roboto"; }
+
+body {
+  margin: 0 auto; }
+
+header {
+  background-color: #326ba8;
+  color: white;
+  display: flex;
+  justify-content: space-around; }
+  header p {
+    text-align: center; }
+
+.login nav {
+  text-align: right; }
+  .login nav a {
+    margin-right: 0.5em;
+    color: white; }
+  .login nav li {
+    display: inline-block; }
+
+.logotipo {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-left: 1em;
+  margin-right: 1em; }
+  .logotipo img {
+    width: 155px; }
+
+.navegacion_principal {
+  background-color: #009ddc;
+  border-top: 2px solid black; }
+  .navegacion_principal nav {
+    display: flex;
+    justify-content: space-around; }
+    .navegacion_principal nav li {
+      display: inline-block; }
+    .navegacion_principal nav a {
+      padding: 1em;
+      display: block;
+      color: white;
+      text-decoration: none; }
+      .navegacion_principal nav a:hover {
+        text-decoration: underline; }
+
+.informacion {
+  display: flex;
+  justify-content: space-between;
+  background-color: #009ddc;
+  padding: 1em;
+  color: white; }
+
+.redes {
+  background-color: #326ba8;
+  display: flex;
+  justify-content: space-between;
+  padding: 1em;
+  color: white; }
+  .redes li {
+    display: inline-block; }
+  .redes a {
+    color: white; }
+
+.persona {
+  display: flex;
+  justify-content: space-between; }
+  .persona img {
+    transition: 1s;
+    width: 20em; }
+  .persona img:hover {
+    border-radius: 50%;
+    box-shadow: 0px 0px 15px 15px #ec731e;
+    transform: rotate(360deg); }
+
+.contacto {
+  background-color: #02569F;
+  width: 100%;
+  display: flex;
+  justify-content: space-around; }
