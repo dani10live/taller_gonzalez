@@ -116,26 +116,27 @@ header {
   .redes a {
     color: white; }
 
-.productos {
-  background-color: #02569F;
+main {
+  background-color: #677387; }
+
+.persona {
   display: flex;
-  flex-wrap: wrap;
-  width: 100%; }
-
-.productos:first-child {
-  padding-top: 2em; }
-
-.productos:last-child {
-  padding-bottom: 2em; }
-
-.producto {
-  display: flex;
-  flex: 1;
-  transition: 1s; }
-  .producto p {
+  justify-content: space-around;
+  padding: 1em; }
+  .persona .descripcion {
+    background-color: #f8a529;
+    border: #009ddc 4px solid; }
+  .persona h2 {
+    background-color: #009ddc;
     color: white;
-    width: 50%;
-    font-size: 1.2em;
-    align-self: center; }
-  .producto:hover {
-    background-color: #326ba8; }
+    font-size: 1.2em; }
+  .persona p {
+    background-color: #f8a529;
+    margin: 1%; }
+  .persona img {
+    transition: 1s;
+    width: 20em; }
+  .persona img:hover {
+    border-radius: 50%;
+    box-shadow: 0px 0px 15px 15px #f8a529;
+    transform: rotate(360deg); }

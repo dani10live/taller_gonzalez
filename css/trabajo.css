@@ -115,9 +115,23 @@ header {
   .redes a {
     color: white; }
 
+main {
+  background-color: #677387; }
+
 .persona {
   display: flex;
-  justify-content: space-between; }
+  justify-content: space-around;
+  padding: 1em; }
+  .persona .descripcion {
+    background-color: darksalmon;
+    border: #326ba8 4px solid; }
+  .persona h2 {
+    background-color: #326ba8;
+    color: white;
+    font-size: 1.2em; }
+  .persona p {
+    background-color: darksalmon;
+    margin: 1%; }
   .persona img {
     transition: 1s;
     width: 20em; }
@@ -125,9 +139,3 @@ header {
     border-radius: 50%;
     box-shadow: 0px 0px 15px 15px #ec731e;
     transform: rotate(360deg); }
-
-.contacto {
-  background-color: #02569F;
-  width: 100%;
-  display: flex;
-  justify-content: space-around; }

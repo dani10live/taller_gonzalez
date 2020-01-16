@@ -1,0 +1,35 @@
+@import "estilos";
+main{
+    background-color: $color-noticias;
+}
+.persona{
+    display: flex;
+    justify-content: space-around;
+    padding: 1em;
+    .descripcion{
+        background-color:$color-descripcion;
+        border: $color-secundario 4px solid;
+    }
+    h2{
+        background-color: $color-secundario;
+        color: white;
+        font-size: 1.2em;
+    }
+    p{
+        background-color: $color-descripcion;
+        margin: 1%
+    }
+    img{
+        transition: 1s;
+        width: 20em;
+      
+    }
+    img:hover{
+        border-radius: 50%;
+        box-shadow: 0px 0px 15px 15px $color-descripcion;
+        transform: rotate(360deg);       
+    }
+    
+}
+
+    
