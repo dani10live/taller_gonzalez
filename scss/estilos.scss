@@ -1,5 +1,6 @@
 @import "componentes/reset.scss";
 @import "componentes/variables.scss";
+@import "componentes/style.scss";
 @font-face {
     font-family: "Roboto";
     src: url("../fuentes/Roboto-Regular.ttf");
@@ -18,25 +19,10 @@ body{
 header {
     background-color: $color-titulo;
     color: white;
-    display: flex;
-    justify-content: space-around;
-    p{
-        text-align: center;
+    h1{
+        font-size: 2em;
     }
 }
-.login{
-
-    nav{
-        text-align:  right;
-        a {
-            margin-right: 0.5em;
-            color: white;
-        }
-        li{
-            display: inline-block;
-        }
-    }
-}   
 .logotipo {
         display: flex;    
         justify-content: space-around;
@@ -44,7 +30,7 @@ header {
         margin-left: 1em;
         margin-right: 1em;
         img{
-            width: 155px;
+            width: 300px;
         }
     
 }
@@ -70,8 +56,6 @@ header {
         }
     }
 }
-footer{
-}
 .informacion{
     display: flex;
     justify-content: space-between;
@@ -92,5 +76,9 @@ footer{
         color: white;
     }
 }
-
-
+.horario{
+    margin: 2em;
+}
+.contacto{
+    margin:2em;
+}
