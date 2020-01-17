@@ -47,6 +47,8 @@ table {
 /*color utilizado por index*/
 /*color utilizado por index*/
 /*color utilizado por quienes somos*/
+/*breakpoints para media query*/
+/*breakpoints para media query*/
 @font-face {
   font-family: 'icomoon';
   src: url("fonts/icomoon.eot?ef5ld6");
@@ -93,14 +95,22 @@ table {
 p, a, h1, h2, h3 {
   font-family: "Roboto"; }
 
+html, body {
+  height: 100%; }
+
 body {
-  margin: 0 auto; }
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column; }
+
+main {
+  flex: 1 0 auto; }
 
 header {
   background-color: #326ba8;
   color: white; }
   header h1 {
-    font-size: 2em; }
+    font-size: 1.3em; }
 
 .logotipo {
   display: flex;
@@ -133,6 +143,8 @@ header {
   background-color: #009ddc;
   padding: 1em;
   color: white; }
+  .informacion img {
+    width: 70%; }
 
 .redes {
   background-color: #326ba8;
@@ -146,10 +158,38 @@ header {
     color: white; }
 
 .horario {
-  margin: 2em; }
+  margin: 1%; }
 
 .contacto {
-  margin: 2em; }
+  margin: 1%; }
+
+footer {
+  flex-shrink: 0; }
+
+@media only screen and (max-width: 700px) {
+  header h1 {
+    font-size: 1em; }
+  body {
+    min-width: 380px; }
+  .logotipo img {
+    width: 25%; }
+  .navegacion_principal {
+    background-color: #009ddc;
+    border-top: 1px solid black; }
+    .navegacion_principal nav a {
+      padding: 0em;
+      padding-top: 1em;
+      padding-bottom: 1em;
+      font-size: 0.7em; }
+  .informacion .imagen img {
+    display: none; }
+  .redes {
+    padding: 0.5em;
+    font-size: 0.7em; }
+  .horario {
+    margin: 1em; }
+  .contacto {
+    margin: 1em; } }
 
 .presentacion {
   display: flex;

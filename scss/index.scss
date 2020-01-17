@@ -59,7 +59,7 @@ iframe{
     margin: 0 auto;
 }
 .tablon{
-    width: 100%;
+    width: 95%;
     margin: 0 auto;
     display: flex;
    
@@ -92,4 +92,19 @@ iframe{
             margin: 0.5em;
             color: white;
             font-size: 3em;
+}
+
+@include phone {
+
+
+    .tablon{
+        display: flex;
+        flex-wrap: wrap; 
+        width: 80%;
+        justify-content: center;
+
+    }
+    .atencion{
+        font-size: 1.8em;
+    }
 }

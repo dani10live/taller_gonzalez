@@ -6,23 +6,43 @@
     src: url("../fuentes/Roboto-Regular.ttf");
 }
 //fuente
+
+
+//media queries
+@mixin phone {
+    @media only screen and (max-width:700px) {
+        @content;
+    }
+} 
+
+
 p,a,h1,h2,h3{
         font-family: "Roboto";
     }
 
 $color: #4c5563;
 $color_claro: #677387;
-
+html,body{
+    height: 100%;
+}
 body{
     margin:0 auto;
+    display: flex;
+    flex-direction: column;
+    
+}
+main {
+    flex:  1 0 auto;
 }
 header {
     background-color: $color-titulo;
     color: white;
     h1{
-        font-size: 2em;
+        font-size: 1.3em;
+        
     }
 }
+
 .logotipo {
         display: flex;    
         justify-content: space-around;
@@ -57,11 +77,15 @@ header {
     }
 }
 .informacion{
+    
     display: flex;
     justify-content: space-between;
     background-color:$color-secundario;
     padding: 1em;
     color: white;
+    img{
+        width: 70%;
+    }
 }
 .redes{
     background-color:$color-titulo;
@@ -77,8 +101,58 @@ header {
     }
 }
 .horario{
-    margin: 2em;
+    margin: 1%;
 }
 .contacto{
-    margin:2em;
+    margin: 1%;
+}
+
+footer {
+    flex-shrink: 0;
+}
+
+@include phone {
+    
+    header {
+        h1{
+            font-size: 1em;
+
+        }
+    }
+    body{min-width: 380px;
+    }
+    .logotipo {
+            img{
+                width: 25%;
+            }
+
+    }
+    .navegacion_principal {
+        background-color: $color-secundario;
+        border-top: 1px solid black;
+        nav{ 
+          a {
+                padding: 0em;
+                padding-top: 1em;
+                padding-bottom: 1em;
+                font-size: 0.7em;               
+            }
+        }
+    }
+    .informacion{
+        .imagen img{
+            display: none;
+        }
+    }
+    .redes {
+        padding: 0.5em;
+        font-size: 0.7em;
+    }
+    .horario{
+        margin: 1em;
+    }
+    .contacto{
+        margin: 1em;
+    }
+
 }

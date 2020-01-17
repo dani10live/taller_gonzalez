@@ -7,21 +7,21 @@
     width: 100%;
 
 }
-.productos:first-child {
-    padding-top: 2em;
-}
-.productos:last-child {
-    padding-bottom: 2em;
-}
+
+ 
+
+
 
 .producto {
     display: flex;
     flex: 1;
     transition: 1s;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
 
     p {
         color: white;
-        width: 50%;
+        width: 60%;
         font-size: 1.2em;
         align-self: center;
     }
@@ -33,4 +33,15 @@
             //opacity: 0.5;
         }
     }
+}
+@include phone {
+.productos {
+    background-color: $color-producto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 100%;
+
+}
+
 }
