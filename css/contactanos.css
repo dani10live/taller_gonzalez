@@ -1,4 +1,3 @@
-@charset "UTF-8";
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -152,17 +151,19 @@ header {
 .contacto {
   margin: 2em; }
 
-.producto {
-  background-color: #02569F;
-  /*Se utilizarán variables para estas cosas*/
-  width: 100%;
+.presentacion {
   display: flex;
-  justify-content: center;
-  transition: 1s; }
-  .producto p {
-    color: white;
-    width: 50%;
-    font-size: 1.2em;
-    align-self: center; }
-  .producto:hover {
-    background-color: #326ba8; }
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 4em; }
+  .presentacion img {
+    width: 30%; }
+
+.grupo {
+  display: flex;
+  flex-direction: column;
+  width: 25em;
+  margin-bottom: 1.5em; }
+  .grupo label {
+    font-size: 1.5em;
+    color: #326ba8; }

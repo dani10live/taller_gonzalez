@@ -1,22 +1,23 @@
 @import "estilos";
 
-.producto{
-    background-color: $color-producto; /*Se utilizarán variables para estas cosas*/
-    width: 100%;
+.presentacion {
     display: flex;
-    justify-content: center;
-    transition: 1s;
-    p{
-        color: white;
-        width: 50%;
-        font-size: 1.2em;
-        align-self: center;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 4em;
+
+    img {
+        width: 30%;
+        
     }
-    &:hover{
-        background-color: $color-titulo;
-        img{
-            //opacity: 0.5;
-            
-        }
+}
+.grupo{
+    display: flex;
+    flex-direction: column;
+    width: 25em;  
+    margin-bottom: 1.5em;
+    label{
+        font-size: 1.5em;
+        color: $color-titulo;
     }
 }
