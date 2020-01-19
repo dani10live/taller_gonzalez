@@ -1,64 +1,52 @@
 @import "estilos";
 
 .persona {
-    transition: 1s;
-    display: flex;
-    justify-content: space-between;
     padding: 1em;
     background-color: black;
     margin: 1em 0;
-    &:hover {
-        p {
-            transition: 1s;
-        }
-        h2 {
-            transition: 1s;
-        }
-        img {
-            tansition: 1s;
-        }
-    }
     h2 {
+        transition: 1s;
         color: white;
-        font-size: 2em;
+        font-size: 3em;
     }
     p {
-        margin: 1%;
+        transition: 1s;
+        color: white;
+        font-size: 1em;
     }
-    img {
-        transition-property: inherit;
-        width: 20em;
+    div{
+     img {
+        transition: 1s;
+        width: 10em;
         opacity: 0;
         margin: 1em;
-        width: 1em;
-    }
-    .descripcion {
-        transition-property: inherit;
-        display: flex;
-        justify-content: space-between;
+    }   
+    &:hover {
+    display: flex;
+    justify-content: space-between;
         p {
-            color: white;
-            font-size: 1em;
+            
+            font-size: 3em;
         }
-    }
-}
-
-.persona:hover {
-    .descripcion {
         h2 {
+
             font-size: 1em;
-        }
-        p {
-            font-size: 2em;
         }
         img {
-            transition: 1s;
             border-radius: 50%;
             box-shadow: 0px 0px 15px 15px white;
             opacity: 1;
             transform: rotate(360deg);
-            width: 50%;
         }
+    }
+    
+}
+    
+    .descripcion {
+
+        display: flex;
+        justify-content: space-between;
+       
     }
 }
 
@@ -69,7 +57,7 @@
             font-size: 1em;
         }
         p {
-            font-size: 2em;
+            font-size: 3em;
         }
         img {
             display: none;
